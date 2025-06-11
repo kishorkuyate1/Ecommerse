@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SeleniumFrameworkSuite"  thread-count="2">
+
+    <!-- ✅ Listener class for ExtentReports, screenshots on failure, etc. -->
+    <listeners>
+        <listener class-name="shettyAcademy.TestComponents.Listeners"/>
+    </listeners>
+
+    <!-- ✅ SubmitOrder Test Block -->
+    <test name="Submit Order Test">
+        <classes>
+            <class name="shettyAcademy.tests.SubmitOrder"/>
+        </classes>
+    </test>
+
+    <!-- ✅ ErrorValidation Test Block -->
+    <test name="Error Validation Test">
+        <classes>
+            <class name="shettyAcademy.tests.ErrorValidation"/>
+        </classes>
+    </test>
+
+</suite>
