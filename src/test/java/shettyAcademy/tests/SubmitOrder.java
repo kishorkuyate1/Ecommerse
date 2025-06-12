@@ -27,6 +27,8 @@ import shettyAcademy.pageObjects.ProductCateloge;
 public class SubmitOrder extends BaseTest {
 	//Jenking 8080 kishorkuyate1 Selenium@123 http://localhost:8080/
 	String productName = "ZARA COAT 3";
+	//Stand Alone Test 
+ 	//changes made for stand alone test
 	@Test(dataProvider="getData",groups= {"purchaseOrder"})
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException {
 		// landingpage is already initialized by @BeforeMethod in BaseTest
